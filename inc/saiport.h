@@ -2165,6 +2165,15 @@ typedef enum _sai_port_attr_t
     SAI_PORT_ATTR_MAX_FEC_SYMBOL_ERRORS_DETECTABLE,
 
     /**
+     * @brief Enable/Disable Port UNRELIABLE loss of signal
+     *
+     * @type bool
+     * @flags CREATE_AND_SET
+     * @default false
+     */
+    SAI_PORT_ATTR_UNRELIABLE_LOS_ENABLE,
+
+    /**
      * @brief Enable ARS on port. This enables the control for quality measure in switch pipeline.
      *
      * @type bool
